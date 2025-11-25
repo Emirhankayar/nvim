@@ -1,10 +1,12 @@
 return {
-    "nvim-lualine/lualine.nvim",
-    config = function()
-        require("lualine").setup({
-            options = {
-            theme = 'auto'
-            }
-        })
-    end
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        opts = {
+            -- theme = 'tokyonight',
+            theme = "rose-pine"
+        }
+    }
 }
